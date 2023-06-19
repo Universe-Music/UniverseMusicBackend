@@ -1,0 +1,19 @@
+[package]
+name = "UniverseMusicBackend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+symphonia = { version = "0.5.3", features =  ["all"] }
+rbs = { version = "4.3"}
+rbatis = { version = "4.3"}
+rbdc-sqlite = { version = "4.3" }
+rbdc-mysql = { version = "4.3" }
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+log = "0.4"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+lazy_static = "1.4.0"
